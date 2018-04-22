@@ -1,0 +1,20 @@
+<form role="form" ng-submit="vm.addSpeaker()">
+  <div class="row">
+    <div class="six columns">
+        <label for="control-label col-sm-2">Speaker Name:</label>
+        <input class="u-full-width" type="text" placeholder="John Doe" ng-model="vm.speaker.name">
+    </div>
+    <div class="six columns">
+        <label for="control-label col-sm-2">No. Of Conferences Attended:</label>
+        <input class="u-full-width" type="number" placeholder="25" ng-model="vm.speaker.noOfConf">
+    </div>
+  </div>
+
+  <label for="favConference">Favorite Conference So Far:</label>
+  <input class="u-full-width" type="text" placeholder="All Superpower Dev Conf 2050" ng-model="vm.speaker.favConf">
+
+  <label for="FavoriteProgrammingQuote">Favorite Programming Quote</label>
+  <textarea class="u-full-width" placeholder="Organizational Skills Beat Algorithmic Wizadry - James Hague" ng-model="vm.speaker.favProgrammingQuote"></textarea>
+  
+  <input class="button-primary" type="submit" value="Submit">
+</form>

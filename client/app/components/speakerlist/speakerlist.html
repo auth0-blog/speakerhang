@@ -1,0 +1,21 @@
+<section>
+  <div class="row">
+    <div class="row" ng-repeat="speaker in vm.speakers">
+      <div class="four columns">
+        <label for="control-label col-sm-2">Speaker Name:</label>
+        <input class="u-full-width" type="text" placeholder="{{ speaker.name }}" readonly>
+      </div>
+      <div class="four columns">
+        <label for="control-label col-sm-2">No. Of Conferences Attended: </label>
+        <input class="u-full-width" type="text" placeholder="{{ speaker.noOfConf }}" readonly>
+      </div>
+      <div class="four columns">
+        <label for="favConference">Favorite Conference So Far:</label>
+        <input class="u-full-width" type="number" placeholder="{{ speaker.favConf }}" readonly>
+      </div>
+      <label for="FavoriteProgrammingQuote">Favorite Programming Quote:</label>
+      <textarea class="u-full-width" placeholder="{{ speaker.favProgrammingQuote }}" readonly></textarea>
+      <hr/>
+    </div>
+  </div>
+</section>
